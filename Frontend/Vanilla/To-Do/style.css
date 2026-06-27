@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #222;
+    color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.container {
+    width: 800px;
+    background: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: #3a3a3a;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+#taskInput::placeholder {
+    color: #bbb;
+}
+
+#taskInput:focus {
+    border-color: #6c63ff;
+}
+
+button {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+ul{
+    padding: 8px;
+}
+.controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.controls button{
+    width: 360px;
+}
+
+button:hover {
+    background: #7d74ff;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#taskList {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+    align-items: center;
+    background: #3a3a3a;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #6c63ff;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #999;
+    opacity: 0.7;
+}
+
+#clearCompletedBtn {
+    background: #ff9800;
+}
+
+#clearCompletedBtn:hover {
+    background: #ffad33;
+}
+
+#clearAllBtn {
+    background: #e53935;
+}
+
+#clearAllBtn:hover {
+    background: #f44336;
+}
+
+/* Scrollbar */
+
+#taskList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#taskList::-webkit-scrollbar-track {
+    background: #333;
+}
+
+#taskList::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+#taskList::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}

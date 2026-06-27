@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TO-DO App</h1>
+    <div class="container">
+      <header>
+        <input type="text" placeholder="Add a new task" id="taskInput" />
+        <button id="addTaskBtn">Add Task</button>
+      </header>
+      <div class="box">
+        <ul id="taskList">
+            <li>
+            <input type="checkbox"/>
+            Project for vanilla Frontend Development
+          </li>
+          <li>
+            <input type="checkbox"/>
+            Made by Talha Tahir
+          </li>
+        </ul>
+        <div class="controls">
+          <button id="clearCompletedBtn">Clear Completed</button>
+          <button id="clearAllBtn">Clear All</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
